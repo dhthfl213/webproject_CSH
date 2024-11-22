@@ -33,13 +33,14 @@
 						<li><a href="index.jsp">Home</a></li>
 						<li><a href="generic.jsp">DH_introduce</a></li>
 						<li><a href="elements.jsp">DH_Community </a></li>
-						<li><a href="login.jsp" class="button special">Login</a></li> <!-- 로그인 링크 추가 -->
+						<li><a href="login.jsp" class="button special">Login</a></li>
 						<li><a href="signup.jsp" class="button special">Sign Up</a></li>
+						<li><a href="Profile.jsp" class="button special">My Profile</a></li>
 					</ul>
 				</nav>
 			</header>
 
-		<!-- Banner -->
+	<!-- Banner -->
 			<section id="banner">
 				<h2>Hi. This is DevHub.</h2>
 				<p>DevHub에 오신 것을 환영합니다. 코딩과 개발에 대한 지식을 나누고, 함께 성장하는 공간입니다.</p>

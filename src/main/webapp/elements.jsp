@@ -8,7 +8,7 @@
 <html lang="ko">
 	<head>
 		<meta charset="UTF-8">
-		<title>Elements - Transit by TEMPLATED</title>
+		<title>HD_Communy</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
@@ -27,13 +27,12 @@
 
 		<!-- Header -->
 			<header id="header">
-				<h1><a href="index.jsp">Transit</a></h1>
+				<h1><a href="index.jsp">DevHub</a></h1>
 				<nav id="nav">
 					<ul>
 						<li><a href="index.jsp">Home</a></li>
-						<li><a href="generic.jsp">Generic</a></li>
-						<li><a href="elements.jsp">Elements</a></li>
-						<li><a href="#" class="button special">Sign Up</a></li>
+						<li><a href="generic.jsp">HD_introduce</a></li>
+						<li><a href="elements.jsp">HD_Communy</a></li>
 					</ul>
 				</nav>
 			</header>
@@ -43,270 +42,98 @@
 				<div class="container">
 
 					<header class="major">
-						<h2>Elements</h2>
-						<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+						<h2>HD_Communy</h2>
+						<p>다양한 개발자들이 모여 서로의 지식과 경험을 나누는 공간입니다.</p>
 					</header>
 
-					<!-- Text -->
-						<section>
-							<h3>Text</h3>
-							<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-							This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-							This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+			<!-- Lists -->
+			<section>
+				<h3>공지</h3>
+				<div class="table-wrapper">
+					<table>
+						<thead>
+							<tr>
+								<th>제목</th>
+								<th>작성일</th>
+								<th>조회수</th>
+								<th>관리</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><a href="notice-detail.jsp?id=1">공지사항 제목 1</a></td>
+								<td>2024-11-21</td>
+								<td>123</td>
+								<td><a href="edit-notice.jsp?id=1">수정</a> | <a
+									href="delete-notice.jsp?id=1"
+									onclick="return confirm('정말 삭제하시겠습니까?');">삭제</a></td>
+							</tr>
+							<tr>
+								<td><a href="notice-detail.jsp?id=2">공지사항 제목 2</a></td>
+								<td>2024-11-20</td>
+								<td>98</td>
+								<td><a href="edit-notice.jsp?id=2">수정</a> | <a
+									href="delete-notice.jsp?id=2"
+									onclick="return confirm('정말 삭제하시겠습니까?');">삭제</a></td>
+							</tr>
+							<!-- 추가적인 공지사항 목록 -->
+						</tbody>
+					</table>
+				</div>
 
-							<hr />
+				<!-- 공지사항 작성 버튼 -->
+				<ul class="actions">
+					<li><a href="create-notice.jsp" class="button">공지사항 작성</a></li>
+				</ul>
+			</section>
 
-							<header>
-								<h3>Heading with a Subtitle</h3>
-								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-							</header>
-							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-							<header>
-								<h4>Heading with a Subtitle</h4>
-								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-							</header>
-							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
 
-							<hr />
 
-							<h2>Heading Level 2</h2>
-							<h3>Heading Level 3</h3>
-							<h4>Heading Level 4</h4>
-							<h5>Heading Level 5</h5>
-							<h6>Heading Level 6</h6>
+			<!-- Table -->
+			<section>
+				<h3>게시판</h3>
+				<h4>게시물 목록</h4>
+				<div class="table-wrapper">
+					<table>
+						<thead>
+							<tr>
+								<th>번호</th>
+								<th>제목</th>
+								<th>작성자</th>
+								<th>작성일</th>
+								<th>조회수</th>
+								<th>삭제</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td><a href="post.jsp?id=1">첫 번째 게시물 제목</a></td>
+								<td>홍길동</td>
+								<td>2024-11-21</td>
+								<td>100</td>
+								<td><a href="deletePost.jsp?id=1">삭제</a></td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td><a href="post.jsp?id=2">두 번째 게시물 제목</a></td>
+								<td>김철수</td>
+								<td>2024-11-20</td>
+								<td>50</td>
+								<td><a href="deletePost.jsp?id=2">삭제</a></td>
+							</tr>
+							<!-- 추가적인 게시글들은 이와 같은 형태로 계속 추가 -->
+						</tbody>
+					</table>
+				</div>
+			</section>
 
-							<hr />
-
-							<h4>Blockquote</h4>
-							<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-
-							<h4>Preformatted</h4>
-							<pre><code>i = 0;
-
-while (!deck.isInOrder()) {
-print 'Iteration ' + i;
-deck.shuffle();
-i++;
-}
-
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-						</section>
-
-					<!-- Lists -->
-						<section>
-							<h3>Lists</h3>
-							<div class="row">
-								<div class="6u 12u(3)">
-
-									<h4>Unordered</h4>
-									<ul>
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Sagittis adipiscing lorem eleifend.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-									</ul>
-
-									<h4>Alternate</h4>
-									<ul class="alt">
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Sagittis adipiscing lorem eleifend.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-									</ul>
-
-								</div>
-								<div class="6u 12u(3)">
-
-									<h4>Ordered</h4>
-									<ol>
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Etiam vel felis at lorem sed viverra.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Etiam vel felis at lorem sed viverra.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-									</ol>
-
-									<h4>Icons</h4>
-									<ul class="icons">
-										<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
-										<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-										<li><a href="#" class="icon fa-tumblr"><span class="label">Tumblr</span></a></li>
-									</ul>
-									<ul class="icons">
-										<li><a href="#" class="icon rounded fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon rounded fa-facebook"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon rounded fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon rounded fa-github"><span class="label">Github</span></a></li>
-										<li><a href="#" class="icon rounded fa-dribbble"><span class="label">Dribbble</span></a></li>
-										<li><a href="#" class="icon rounded fa-tumblr"><span class="label">Tumblr</span></a></li>
-									</ul>
-
-								</div>
-							</div>
-
-							<h4>Actions</h4>
-							<ul class="actions">
-								<li><a href="#" class="button alt">Default</a></li>
-								<li><a href="#" class="button">Default</a></li>
-							</ul>
-							<ul class="actions small">
-								<li><a href="#" class="button alt small">Small</a></li>
-								<li><a href="#" class="button small">Small</a></li>
-							</ul>
-							<div class="row">
-								<div class="3u 6u(2) 12u$(3)">
-									<ul class="actions vertical">
-										<li><a href="#" class="button alt">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-								</div>
-								<div class="3u 6u$(2) 12u$(3)">
-									<ul class="actions vertical small">
-										<li><a href="#" class="button alt small">Small</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-								</div>
-								<div class="3u 6u(2) 12u$(3)">
-									<ul class="actions vertical">
-										<li><a href="#" class="button alt fit">Default</a></li>
-										<li><a href="#" class="button fit">Default</a></li>
-									</ul>
-								</div>
-								<div class="3u 6u$(2) 12u$(3)">
-									<ul class="actions vertical small">
-										<li><a href="#" class="button alt small fit">Small</a></li>
-										<li><a href="#" class="button small fit">Small</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-
-					<!-- Table -->
-						<section>
-							<h3>Table</h3>
-							<h4>Default</h4>
-							<div class="table-wrapper">
-								<table>
-									<thead>
-										<tr>
-											<th>Name</th>
-											<th>Description</th>
-											<th>Price</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Item 1</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item 2</td>
-											<td>Vis ac commodo adipiscing arcu aliquet.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item 3</td>
-											<td> Morbi faucibus arcu accumsan lorem.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item 4</td>
-											<td>Vitae integer tempus condimentum.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item 5</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-									</tbody>
-									<tfoot>
-										<tr>
-											<td colspan="2"></td>
-											<td>100.00</td>
-										</tr>
-									</tfoot>
-								</table>
-							</div>
-							<h4>Alternate</h4>
-							<div class="table-wrapper">
-								<table class="alt">
-									<thead>
-										<tr>
-											<th>Name</th>
-											<th>Description</th>
-											<th>Price</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Item 1</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item 2</td>
-											<td>Vis ac commodo adipiscing arcu aliquet.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item 3</td>
-											<td> Morbi faucibus arcu accumsan lorem.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item 4</td>
-											<td>Vitae integer tempus condimentum.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item 5</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-									</tbody>
-									<tfoot>
-										<tr>
-											<td colspan="2"></td>
-											<td>100.00</td>
-										</tr>
-									</tfoot>
-								</table>
-							</div>
-						</section>
-
-					<!-- Buttons -->
+			<!-- Buttons -->
 						<section>
 							<h3>Buttons</h3>
 							<ul class="actions">
 								<li><a href="#" class="button alt">Special</a></li>
 								<li><a href="#" class="button">Default</a></li>
-							</ul>
-							<ul class="actions">
-								<li><a href="#" class="button alt big">Big</a></li>
-								<li><a href="#" class="button">Default</a></li>
-								<li><a href="#" class="button small">Default</a></li>
-							</ul>
-							<div class="row">
-								<div class="6u 12u$(3)">
-									<ul class="actions fit">
-										<li><a href="#" class="button alt fit">Fit</a></li>
-										<li><a href="#" class="button fit">Fit</a></li>
-									</ul>
-								</div>
-								<div class="6u$ 12u$(3)">
-									<ul class="actions fit small">
-										<li><a href="#" class="button alt fit small">Fit + Small</a></li>
-										<li><a href="#" class="button fit small">Fit + Small</a></li>
-									</ul>
-								</div>
-							</div>
-							<ul class="actions">
-								<li><a href="#" class="button alt icon fa-download">Icon</a></li>
-								<li><a href="#" class="button icon fa-download">Icon</a></li>
 							</ul>
 							<ul class="actions">
 								<li><span class="button alt disabled">Special</span></li>

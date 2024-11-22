@@ -110,7 +110,8 @@
     <div class="login-container">
         <h1>환영합니다!</h1>
         <p><%= session.getAttribute("UserName") %> 회원님, 로그인하셨습니다.</p>
-        <a href="Logout.jsp">[로그아웃]</a>
+        <a href="logout.jsp">[로그아웃]</a>
+        <a href="index.jsp">[Home]</a>
     </div>
 <%
     }

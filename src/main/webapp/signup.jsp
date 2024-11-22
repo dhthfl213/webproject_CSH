@@ -33,7 +33,18 @@
 <body>
     <div class="signup-form">
         <h2 class="text-center mb-4">회원가입</h2> <!-- 제목: 가운데 정렬, 아래 여백 -->
-        <form action="signupAction" method="post"> <!-- 폼 데이터를 signupAction으로 POST 방식으로 전송 -->
+        
+        <%
+            String message = request.getAttribute("message") != null ? (String) request.getAttribute("message") : "";
+            if (!message.isEmpty()) {
+        %>
+            <div class="alert alert-danger text-center" role="alert">
+                <%= message %>
+            </div>
+        <%
+            }
+        %>
+        <form action="signup" method="post"> <!-- 폼 데이터를 signupAction으로 POST 방식으로 전송 -->
             <!-- 아이디 입력 -->
             <div class="mb-3">
                 <label for="user_id" class="form-label">아이디</label> <!-- 입력 필드에 대한 설명 -->

@@ -37,5 +37,31 @@
     <url-pattern>/login</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+    <servlet-name>ListController</servlet-name>
+    <servlet-class>board.ListController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ListController</servlet-name>
+    <url-pattern>/board/list.do</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>WriteCtrl</servlet-name>
+    <servlet-class>board.WriteCtrl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>WriteCtrl</servlet-name>
+    <url-pattern>/board/write.do</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ViewController</servlet-name>
+    <servlet-class>board.ViewController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ViewController</servlet-name>
+    <url-pattern>/board/view.do</url-pattern>
+  </servlet-mapping>
  
 </web-app>
